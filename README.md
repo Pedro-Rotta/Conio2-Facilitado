@@ -1,40 +1,38 @@
 # Conio2 Facilitado
- Este é um arquivo de cabeçalho utilizado para tornar a utilização do Conio2 algo mais agradável e de forma mais ágil. 🚀
+Este é um arquivo de cabeçalho utilizado para tornar a utilização do Conio2 algo mais agradável e ágil. 🚀
  
 ---
 
 # ❓Como usar❓
- Para a utilização desse arquivo, será necessário algumas bibliotecas específicas, juntamente com o include do próprio arquivo.
+Para a utilização desse arquivo, será necessário algumas bibliotecas específicas, juntamente com o include do próprio arquivo.
  São as seguintes bibliotecas:
  
  ![image](https://github.com/user-attachments/assets/9ed9a4b1-7dac-4d52-b734-eaf09c36a2a4)
  
-Lembrando que o arquivo "Conio2_Facilitado.h" deve estar no mesmo diretório que o seu arquivo executavel, comumente chamado de "main.c" ou "main.cpp".
+Lembrando que o arquivo "Conio2_Facilitado.h" deve estar no mesmo diretório que o seu arquivo executável, comumente chamado de "main.c" ou "main.cpp".
 
 ![image](https://github.com/user-attachments/assets/591a0244-679b-4a92-a0a7-7329e8443bde)
 
-👍 Após isso, o Conio2_Facilitado ja estara funcional. 👍
+👍Após isso, o Conio2_Facilitado já estará funcional.👍
 
 ---
 
 # 📔✏️Explicando as funções📔✏️
-Pode se ter algumas duvidas sobre como funciona a utilização de uma função ou outra, mas não se preocupe, elas são bem simples de entender!
+Pode ser que você tenha algumas dúvidas sobre como funciona a utilização de uma função ou outra, mas não se preocupe, elas são bem simples de entender!
 ---
 # auxilioPosicoes
- Esta função serve para facilitar a identificação das posições no CMD.
- 
+Esta função serve para facilitar a identificação das posições no CMD.
+
+ Sendo todo número vermelho um décimo elemento.
  # Exemplo: 
  
  ![image](https://github.com/user-attachments/assets/7ddaa0ef-edd3-45a2-a012-6d1bcea61423)
 
 ![image](https://github.com/user-attachments/assets/3c606d1a-302b-41a9-9303-5cb452452e51)
 
-Sendo todo numero vermelho um décimo elemento.
-
 ---
 # retangulo
-Essa é a função que mais acelera seu desenvolvimento de interface no CMD.
-Deve-se passar 4 parametros indicando o inicio e fim:
+Essa é a função que mais acelera seu desenvolvimento de interface no CMD. Deve-se passar 4 parâmetros indicando o início e fim:
 
     xI = posição horizontal inicial
     xF = posição horizontal final
@@ -50,9 +48,9 @@ Deve-se passar 4 parametros indicando o inicio e fim:
 
 ---
 # linhaHorizontal e linhaHorizontalComLaterais
- Estas funções servem para desenhar uma linha horizontal, com ou sem as laterais.
- 
- Basta passar os parametros:
+Essas funções servem para desenhar uma linha vertical, com ou sem as extremidades.
+
+Basta passar os parâmetros:
 
      y = posicao vertical
      xI = posicao horizontal inicial
@@ -82,14 +80,14 @@ Basta passar os parametros:
 ---
 # Cantos
 
-A passagem de parametros são iguais para as 4 funções:
+A passagem de parâmetros é igual para as 4 funções:
 
      cantoSuperiorEsquerdo
      cantoInferiorEsquerdo
      cantoSuperiorDireito
      cantoInferiorDireito
      
-Deve-se passar a posição da linha horizontal (x) e da linha vertical y apenas.
+Deve-se passar a posição da linha horizontal (x) e da linha vertical (y) apenas.
 
 # Exemplo: 
 
@@ -101,11 +99,13 @@ Deve-se passar a posição da linha horizontal (x) e da linha vertical y apenas.
 # atribuirCor
 Essa função tem o mesmo funcionamento de "textcolor" da biblioteca conio2, porém com outro nome, para quem preferir.
 
-Deve ser passada a cor em inglês e maiuscula, caso não seja cumprido essas regras, o programa não compilara.
+Deve ser passada a cor em inglês e maiúscula. Caso não seja cumprido esse requisito, o programa não compilará.
 
-Site para ver todas as cores: https://conio.sourceforge.net/docs/html/conio2_8h.html#ab983350d6d1201c0ebd709320e7a0d50
+Site para ver todas as cores: [conio2_8](https://conio.sourceforge.net/docs/html/conio2_8h.html#ab983350d6d1201c0ebd709320e7a0d50)
 
-Lembre-se sempre de voltar para a cor desejada, caso esteja escrevendo em branco, lembre de utilizar "atribuirCor(WHITE)" após trocar a cor.
+
+
+Lembre-se sempre de voltar para a cor desejada. Caso esteja escrevendo em branco, lembre-se de utilizar "atribuirCor(WHITE)" após trocar a cor.
 
 # Exemplo: 
 ![image](https://github.com/user-attachments/assets/4d32e5b6-e2b1-4b15-9b18-9da16e2209db)
@@ -114,9 +114,9 @@ Lembre-se sempre de voltar para a cor desejada, caso esteja escrevendo em branco
 
 ---
 # repetirCaracaterHorizontal e repetirCaracterVertical
-Essas funções tem a mesma passagem de parametros que as linhas, porém com o caractere desejado no final
+Essas funções têm a mesma passagem de parâmetros que as linhas, porém com o caractere desejado no final.
 
-Lembre-se sempre de passar o caractere entre aspras comuns;
+Lembre-se sempre de passar o caractere entre aspas comuns.
 
 # Exemplo:
 
@@ -128,11 +128,11 @@ Lembre-se sempre de passar o caractere entre aspras comuns;
 # opcoesMenu e opcoesMenuEspacado
 Essa função espera a quantidade de elementos no seu menu, a posição de onde deve começar e quais são os elementos.
 
-Os elementos são passados por uma matrix de char (vetor de string), então voce deve cria-lo antes.
+Os elementos são passados por uma matriz de char (vetor de strings), então você deve criá-la antes.
 
 Criando os elementos: ![image](https://github.com/user-attachments/assets/e177a330-52aa-4203-ac6c-fc998bcbc052)
 
-Lembrando que a quantidade de elementos define a quantidade de opcoes que seu menu vai ter [A-Z], o ultimo elemento sempre sera "[ESC]", sendo assim, deve-se atribuir a mensagem que o "[ESC]" recebera, mas sem conta-lo como elemento.
+Lembrando que a quantidade de elementos define a quantidade de opções que seu menu vai ter [A-Z], o último elemento sempre será "[ESC]", sendo assim, deve-se atribuir a mensagem que o "[ESC]" receberá, mas sem contá-lo como elemento.
 # Exemplo Menu: 
 
 ![image](https://github.com/user-attachments/assets/ac86c069-1e4a-46c7-9fb5-f064fdb20368)
@@ -149,7 +149,7 @@ Lembrando que a quantidade de elementos define a quantidade de opcoes que seu me
 # clearArea
 Essa função tem seu funcionamento semelhante ao "clrscr()", porém limpa apenas determinada área escolhida pelo programador.
 
-os parametros são:
+Os parâmetros são:
 
     xI = posição horizontal inicial
     xF = posição horizontal final
@@ -172,12 +172,12 @@ Depois do clear:
 
 ---
 # exibeTexto
-Essa função espera como parametro:
+Essa função espera como parâmetros:
 
-    x = posicao horizontal
-    y = posicao vertical
+    x = posição horizontal
+    y = posição vertical
     txt = texto que deseja mostrar
-    cor = Cor que o texto sera exibido
+    cor = cor que o texto sera exibido
 
 # Exemplo:
 
@@ -185,9 +185,37 @@ Essa função espera como parametro:
 
 ![image](https://github.com/user-attachments/assets/b452cb95-26bd-4f60-b6ef-f67ea892fa1e)
 
+---
+
+# ligacao4Pontos
+Essa função recebe como parâmetros:
+
+    x = posição horizontal
+    y = posição vertical
+
+# Exemplo:
+
+![image](https://github.com/user-attachments/assets/fd793c95-28da-4c80-b245-2a7b56a4302f)
+
+![image](https://github.com/user-attachments/assets/0df1f800-a26d-41be-a8f1-1634c6b5793c)
 
 
+---
 
+# Exemplos de utilização na prática
+
+# Exemplo 1:
+
+[Código](https://gist.github.com/Pedro-Rotta/5803eff254804f2bff22dea147a5977d)
+
+![image](https://github.com/user-attachments/assets/dfdb80de-d6e7-48fd-822e-8c52eb64711c)
+
+---
+# Exemplo 2:
+
+[Código](https://gist.github.com/Pedro-Rotta/6e1ecc6f5e3a7c8477318acfe679ea95)
+
+![image](https://github.com/user-attachments/assets/d2e9fa2c-dfa4-4f93-96c4-96f15abd2178)
 
 
 
