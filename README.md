@@ -125,7 +125,13 @@ Lembre-se sempre de passar o caractere entre aspas comuns.
 
 ---
 # opcoesMenu e opcoesMenuEspacado
-Essa função espera a quantidade de elementos no seu menu, a posição de onde deve começar e quais são os elementos.
+Essa função espera os seguintes parâmetros:
+
+    qntOpcoes = quantidade de elementos
+    x = posição horizontal
+    y = posição vertical
+    tit = elementos
+    
 
 Os elementos são passados por uma matriz de char (vetor de strings), então você deve criá-la antes.
 
@@ -134,7 +140,8 @@ Criando os elementos: ![image](https://github.com/user-attachments/assets/e177a3
 Lembrando que a quantidade de elementos define a quantidade de opções que seu menu vai ter [A-Z], o último elemento sempre será "[ESC]", sendo assim, deve-se atribuir a mensagem que o "[ESC]" receberá, mas sem contá-lo como elemento.
 # Exemplo Menu: 
 
-![image](https://github.com/user-attachments/assets/ac86c069-1e4a-46c7-9fb5-f064fdb20368)
+![image](https://github.com/user-attachments/assets/80ce6755-c7a0-4fd2-bb04-a38c8b75d211)
+
 
 ![image](https://github.com/user-attachments/assets/458e5025-bd53-4a0c-b09d-56b8f78f2fa6)
 
@@ -201,7 +208,30 @@ Essa função recebe como parâmetros:
 
 ---
 
+# Dicas de Clean Code
+Clean Code é um conceito que se refere à prática de escrever códigos de programação de uma maneira que seja fácil de entender, manter e modificar.
+
+Princípios fundamentais do Clean Code:
+
+    Legibilidade
+    Simplicidade
+    Nomenclatura Significativa
+    Estruturação:
+
+
+
+# Exemplo prático
+
+Analise os 2 códigos e observe qual é o mais simples de se entender.
+
+Sem Clean Code: https://gist.github.com/Pedro-Rotta/43439de8fe263b007f7862cd0f4b4ca5
+
+Com Clean Code: https://gist.github.com/Pedro-Rotta/0b8a9a0d152f3eb32369c3251bc32912
+
+---
+
 # Exemplos de utilização na prática
+
 
 # Exemplo 1:
 
@@ -215,8 +245,3 @@ Essa função recebe como parâmetros:
 [Código](https://gist.github.com/Pedro-Rotta/6e1ecc6f5e3a7c8477318acfe679ea95)
 
 ![image](https://github.com/user-attachments/assets/d2e9fa2c-dfa4-4f93-96c4-96f15abd2178)
-
-
-
-
-
