@@ -264,7 +264,7 @@ Dessa forma, quando alterarmos o "define posicaoMensagemDisplayY", alteraremos t
 
 ---
 
-## Exemplo prático de tudo que foi falado
+## Exemplo prático de Clean Code
 
 Analise os 2 códigos e observe qual é o mais simples de se entender.
 
@@ -274,7 +274,7 @@ Com Clean Code: [Código](https://gist.github.com/Pedro-Rotta/0b8a9a0d152f3eb323
 
 ---
 
-# Exemplos de utilização na prática
+# Exemplos de utilização na prática 🧑🏻‍💻🧑🏿‍💻
 
 ## Exemplo 1:
 
