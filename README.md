@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/497553b8-e367-4d80-9823-a697b3403a50)# Conio2 Facilitado
+# Conio2 Facilitado
 Este é um arquivo de cabeçalho utilizado para tornar a utilização do Conio2 algo mais agradável e ágil. 🚀
 ## O que é o Conio2?
 Conio2 é uma biblioteca de programação em C que facilita a criação de interfaces de usuário em modo texto (ou seja, em um terminal ou console). Ela oferece funções para manipular a tela do console, como mover o cursor para diferentes posições, alterar as cores do texto e do fundo, e desenhar formas simples como linhas e retângulos.
