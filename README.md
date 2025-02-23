@@ -18,7 +18,6 @@ Lembrando que o arquivo "Conio2_Facilitado.h" deve estar no mesmo diretório que
 ---
 
 # 📔✏️Explicando as funções📔✏️
-Pode ser que você tenha algumas dúvidas sobre como funciona a utilização de uma função ou outra, mas não se preocupe, elas são bem simples de entender!
 ---
 # auxilioPosicoes
 Esta função serve para facilitar a identificação das posições no CMD.
