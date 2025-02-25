@@ -451,14 +451,14 @@ Com Clean Code: [Código](https://gist.github.com/Pedro-Rotta/0b8a9a0d152f3eb323
 
 ---
 
-Obrigado a voce que leu até aqui, ficarei muito feliz se quiser apoiar o projeto fazendo uma branch e desenvolvendo algumas funções extras, ou até mesmo colocando exemplos adicionais do que é possivel fazer utilizando conio2, até por que quando se trata de desenvolvimento, o céu é o limite.
+Agradeço a você que leu até aqui! Ficarei muito feliz se quiser apoiar o projeto criando uma branch e desenvolvendo novas funcionalidades ou adicionando exemplos extras do que é possível fazer com a biblioteca conio2. Afinal, quando se trata de desenvolvimento, o céu é o limite! 🚀
 
-Este repositório tem como principal intuito ajudar outras pessoas que se interessam em mexer um pouco com essa parte gráfica mais simples e até mesmo ajudar aqueles que não tem muito tempo para gastar com esse tipo de design, com esse arquivo em mãos, conseguimos fazer uma interface interessante para nossos trabalhos escolares e facultativos sem perder muito tempo.
+Este repositório tem como principal objetivo ajudar aqueles que desejam explorar essa interface gráfica mais simples, seja por interesse próprio ou por falta de tempo para se aprofundar no design. Com este arquivo em mãos, é possível criar uma interface visual interessante para trabalhos acadêmicos e projetos pessoais sem gastar muito tempo.
 
-## Se este projeto te ajudou, ou se você se interessou por ele, deixe uma ⭐ para me ajudar e para mais pessoas verem.
+## ⭐ Se este projeto foi útil para você ou despertou seu interesse, deixe uma estrela para ajudar na sua visibilidade e permitir que mais pessoas o encontrem!
 
 
-### Me siga nas redes sociais
+### 📲 Me siga nas redes sociais
 
 [![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/p_rotta7/)
 
