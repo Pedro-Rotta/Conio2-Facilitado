@@ -20,7 +20,12 @@ Lembrando que o arquivo "Conio2_Facilitado.h" deve estar no mesmo diretório que
 ---
 
 # 📔✏️Explicando as funções📔✏️
-
+## Definições padrão:
+        Todas as funções:
+           Exceto o clearArea tem "cor" como ultimo parâmetro
+           Dos valores x e y começam pelo x
+           Começam sempre pelo xI, quando houver
+        
 ---
 
 ## auxilioPosicoes
