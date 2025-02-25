@@ -5,6 +5,42 @@ Conio2 é uma biblioteca de programação em C que facilita a criação de inter
 
 ---
 
+## Instalação do Conio2
+
+Segue um repositório do [mateus-sm](https://github.com/mateus-sm) detalhado sobre como instalar o Conio2 em seu computador,
+neste repositório ele ensina a instalar diretamente no VS-Code.
+
+[Repositório](https://github.com/mateus-sm/Conio2-VsCode)
+
+---
+
+# Índice 
+- [Como usar](https://github.com/Pedro-Rotta/Conio2-Facilitado#como-usar)
+- [Explicando as funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#%EF%B8%8Fexplicando-as-fun%C3%A7%C3%B5es%EF%B8%8F)
+
+- - [auxilioPosicoes](https://github.com/Pedro-Rotta/Conio2-Facilitado#auxilioposicoes)
+- - [retangulo](https://github.com/Pedro-Rotta/Conio2-Facilitado#retangulo)
+- - [exibeTexto](https://github.com/Pedro-Rotta/Conio2-Facilitado#exibetexto)
+- - [linhaHorizontal e linhaHorizontalComLaterais](https://github.com/Pedro-Rotta/Conio2-Facilitado#linhahorizontal-e-linhahorizontalcomlaterais)
+- - [linhaVertical e linhaVerticalComExtremidades](https://github.com/Pedro-Rotta/Conio2-Facilitado#linhavertical-e-linhaverticalcomextremidades)
+- - [Cantos](https://github.com/Pedro-Rotta/Conio2-Facilitado#cantos)
+- - [repetirCaracaterHorizontal e repetirCaracterVertical](https://github.com/Pedro-Rotta/Conio2-Facilitado#repetircaracaterhorizontal-e-repetircaractervertical)
+- - [opcoesMenu e opcoesMenuEspacado](https://github.com/Pedro-Rotta/Conio2-Facilitado#opcoesmenu-e-opcoesmenuespacado)
+- - [clearArea](https://github.com/Pedro-Rotta/Conio2-Facilitado#cleararea)
+- - [ligacao4Pontos](https://github.com/Pedro-Rotta/Conio2-Facilitado#ligacao4pontos)
+- - [pintarArea](https://github.com/Pedro-Rotta/Conio2-Facilitado#pintararea)
+- - [prateleiraVertical](https://github.com/Pedro-Rotta/Conio2-Facilitado#prateleiravertical)
+- - [prateleiraHorizontal](https://github.com/Pedro-Rotta/Conio2-Facilitado#prateleirahorizontal)
+- - [preencherPrateleiraVertical](https://github.com/Pedro-Rotta/Conio2-Facilitado#preencherprateleiravertical)
+- - [preencherPrateleiraHorizontal](https://github.com/Pedro-Rotta/Conio2-Facilitado#preencherprateleirahorizontal)
+- [Dicas de Clean Code](https://github.com/Pedro-Rotta/Conio2-Facilitado#dicas-de-clean-code)
+- - [O que é?](https://github.com/Pedro-Rotta/Conio2-Facilitado/edit/main/README.md#o-que-%C3%A9)
+- - [Utilização de define](https://github.com/Pedro-Rotta/Conio2-Facilitado#utiliza%C3%A7%C3%A3o-de-define)
+- - [Criar funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#criar-fun%C3%A7%C3%B5es)
+- - [Exemplo prático de Clean Code](https://github.com/Pedro-Rotta/Conio2-Facilitado#exemplo-pr%C3%A1tico-de-clean-code)
+- [Exemplos de utilização na prática](https://github.com/Pedro-Rotta/Conio2-Facilitado#exemplos-de-utiliza%C3%A7%C3%A3o-na-pr%C3%A1tica-)
+
+---
 # ❓Como usar❓
 Para a utilização desse arquivo, será necessário algumas bibliotecas específicas, juntamente com o include do próprio arquivo.
 São as seguintes bibliotecas:
@@ -20,7 +56,12 @@ Lembrando que o arquivo "Conio2_Facilitado.h" deve estar no mesmo diretório que
 ---
 
 # 📔✏️Explicando as funções📔✏️
-
+## Definições padrão:
+        Todas as funções:
+           Exceto o "clearArea", tem "cor" como ultimo parâmetro
+           Dos valores x e y começam pelo x
+           Começam sempre pelo xI, quando houver
+        
 ---
 
 ## auxilioPosicoes
@@ -38,31 +79,52 @@ Sendo todo número vermelho um décimo elemento.
 ## retangulo
 Essa é a função que mais acelera seu desenvolvimento de interface no CMD. Deve-se passar 4 parâmetros indicando o início e fim:
 
+## São os parâmetros:
+
     xI = posição horizontal inicial
     xF = posição horizontal final
     yI = posição vertical inicial
     yF = posição vertical final
+    cor = cor do retangulo
 
 ### Exemplo: 
 
-![image](https://github.com/user-attachments/assets/60356762-55c3-4084-add3-3d6f7c936f34)
+![image](https://github.com/user-attachments/assets/d6d89298-7a73-4657-85d2-d61e9e39b60e)
 
 ![image](https://github.com/user-attachments/assets/c8358311-748e-43f5-99b6-a93cb1ddd253)
+
+---
+
+## exibeTexto
+Exibe o determinado texto.
+## São os parâmetros:
+
+    x = posição horizontal
+    y = posição vertical
+    txt = texto que deseja mostrar
+    cor = cor que o texto sera exibido
+
+### Exemplo:
+
+![image](https://github.com/user-attachments/assets/16da4ef7-5635-4971-8d80-3c62129c2e6f)
+
+![image](https://github.com/user-attachments/assets/b452cb95-26bd-4f60-b6ef-f67ea892fa1e)
 
 ---
 
 ## linhaHorizontal e linhaHorizontalComLaterais
 Essas funções servem para desenhar uma linha vertical, com ou sem as extremidades.
 
-Basta passar os parâmetros:
+## São os parâmetros:
 
-     y = posicao vertical
      xI = posicao horizontal inicial
      xF = posicao horizontal final
+     y = posicao vertical
+     cor = cor da linha
 
 ### Exemplo: 
 
-![image](https://github.com/user-attachments/assets/da6cb18c-c6cc-4925-bd18-ed0dd61759c0)
+![image](https://github.com/user-attachments/assets/7d67501b-b163-42e8-b96e-ea7036f2ed60)
 
 ![image](https://github.com/user-attachments/assets/e4bb807c-9d81-433b-b0b1-5b8523bcab4c)
 
@@ -71,21 +133,23 @@ Basta passar os parâmetros:
 ## linhaVertical e linhaVerticalComExtremidades
 Estas funções servem para desenhar uma linha vertical, com ou sem as extremidades.
 
-Basta passar os parametros:
+## São os parâmetros da linha vertical:
 
     x = posicao horizontal
     yI = posicao vertical inicial
     yF = posicao vertical final
+    cor = cor da linha
 
 ### Exemplo: 
 
-![image](https://github.com/user-attachments/assets/65f26a61-0476-4f53-97e6-ce0494c2f819)
+![image](https://github.com/user-attachments/assets/83ed81d7-9be3-4896-83a2-04203c2562f5)
 
 ![image](https://github.com/user-attachments/assets/20334418-e800-44a4-ae6e-e9bf3fb8b650)
 
 ---
 
 ## Cantos
+Faz pontos de encontro canteiros.
 
 A passagem de parâmetros é igual para as 4 funções:
 
@@ -94,52 +158,56 @@ A passagem de parâmetros é igual para as 4 funções:
      cantoSuperiorDireito
      cantoInferiorDireito
      
-Deve-se passar a posição da linha horizontal (x) e da linha vertical (y) apenas.
+## São os parâmetros:
+
+     x = posição horizontal
+     y = posição vertical
+     cor = cor do canto
 
 ### Exemplo: 
 
-![image](https://github.com/user-attachments/assets/c70a38d5-2125-429c-a69e-620361b5d092)
+![image](https://github.com/user-attachments/assets/fb07d4ee-b278-4fa2-9c44-9857182cfeb6)
 
 ![image](https://github.com/user-attachments/assets/4f0e4eed-4704-41e9-bb55-ae4381c2438f)
 
 ---
 
-## atribuirCor
-Essa função tem o mesmo funcionamento de "textcolor" da biblioteca conio2, porém com outro nome, para quem preferir.
-
-Deve ser passada a cor em inglês e maiúscula. Caso não seja cumprido esse requisito, o programa não compilará.
-
-Site para ver todas as cores: [conio2_8](https://conio.sourceforge.net/docs/html/conio2_8h.html#ab983350d6d1201c0ebd709320e7a0d50)
-
-Lembre-se sempre de voltar para a cor desejada. Caso esteja escrevendo em branco, lembre-se de utilizar "atribuirCor(WHITE)" após trocar a cor.
-
-### Exemplo: 
-![image](https://github.com/user-attachments/assets/4d32e5b6-e2b1-4b15-9b18-9da16e2209db)
-
-![image](https://github.com/user-attachments/assets/f391f691-e1fc-4ec8-bd45-1f791f626e38)
-
----
-
 ## repetirCaracaterHorizontal e repetirCaracterVertical
-Essas funções têm a mesma passagem de parâmetros que as linhas, porém com o caractere desejado no final.
+Essas funções desenham uma linha de caracteres.
 
+## São os parâmetros da vertical:
+
+    x = posição horizontal
+    yI = posição vertical inicial
+    yF = posição vertical final
+    cor = cor dos caracteres
+## São os parâmetros da horizontal:
+
+    xI = posição horizontal inicial
+    xF = posição horizontal final
+    y = posição vertical
+    cor = cor dos caracteres
+    
 Lembre-se sempre de passar o caractere entre aspas comuns.
 
 ### Exemplo:
 
-![image](https://github.com/user-attachments/assets/7b8bef9c-a8f7-40b2-bc92-c5bfd63d3ddb)
+![image](https://github.com/user-attachments/assets/21039331-b525-45bd-9c00-b6e8443a16fe)
 
 ![image](https://github.com/user-attachments/assets/3b3c71fd-917a-42b9-8185-cf599fd2d6c7)
 
 ---
 
 ## opcoesMenu e opcoesMenuEspacado
-Essa função espera os seguintes parâmetros:
+Cria um menu com todas as opcoes desejadas.
+
+## São os parâmetros:
 
     qntOpcoes = quantidade de elementos
     x = posição horizontal
     y = posição vertical
     tit = elementos
+    cor = cor do menu
     
 Os elementos são passados por uma matriz de char (vetor de strings), então você deve criá-la antes.
 
@@ -150,13 +218,13 @@ Lembrando que a quantidade de elementos define a quantidade de opções que seu 
 
 ### Exemplo Menu: 
 
-![image](https://github.com/user-attachments/assets/80ce6755-c7a0-4fd2-bb04-a38c8b75d211)
+![image](https://github.com/user-attachments/assets/9cec35cf-4818-4d6e-a391-7bf1b7c0ba3f)
 
 ![image](https://github.com/user-attachments/assets/458e5025-bd53-4a0c-b09d-56b8f78f2fa6)
 
 ### Exemplo Menu espaçado:
 
-![image](https://github.com/user-attachments/assets/3643f191-d0d8-4746-a594-25ed7e7f2f42)
+![image](https://github.com/user-attachments/assets/3d3163c0-7902-4dca-8e69-df4da5e23b24)
 
 ![image](https://github.com/user-attachments/assets/d02c7b49-8d78-46bb-bded-15f1012e9f45)
 
@@ -165,7 +233,7 @@ Lembrando que a quantidade de elementos define a quantidade de opções que seu 
 ## clearArea
 Essa função tem seu funcionamento semelhante ao "clrscr()", porém limpa apenas determinada área escolhida pelo programador.
 
-Os parâmetros são:
+## São os parâmetros:
 
     xI = posição horizontal inicial
     xF = posição horizontal final
@@ -188,37 +256,124 @@ Depois do clear:
 
 ---
 
-## exibeTexto
-Essa função espera como parâmetros:
-
-    x = posição horizontal
-    y = posição vertical
-    txt = texto que deseja mostrar
-    cor = cor que o texto sera exibido
-
-### Exemplo:
-
-![image](https://github.com/user-attachments/assets/16da4ef7-5635-4971-8d80-3c62129c2e6f)
-
-![image](https://github.com/user-attachments/assets/b452cb95-26bd-4f60-b6ef-f67ea892fa1e)
-
----
-
 ## ligacao4Pontos
-Essa função recebe como parâmetros:
+Faz um ponto de encontro de 4 lados.
+
+## São os parâmetros:
 
     x = posição horizontal
     y = posição vertical
+    cor = cor da ligação
 
 ### Exemplo:
 
-![image](https://github.com/user-attachments/assets/fd793c95-28da-4c80-b245-2a7b56a4302f)
+![image](https://github.com/user-attachments/assets/93d5cf60-a6da-466c-ba8b-3d416124e8ec)
 
 ![image](https://github.com/user-attachments/assets/0df1f800-a26d-41be-a8f1-1634c6b5793c)
 
 ---
+## pintarArea
+Pinta uma determinada area da sua escolha.
+
+## São os parâmetros:
+
+     xI = posição horizontal inicial
+     xF = posição horizontal final
+     yI = posição vertical inicial
+     yF = posição vertical final
+     cor = cor da area
+
+### Exemplo:
+
+![image](https://github.com/user-attachments/assets/21413457-c317-4abc-894c-bca14c046feb)
+
+![image](https://github.com/user-attachments/assets/f7b14339-2710-495c-872b-d65f4b5132c1)
+
+---
+
+## prateleiraVertical
+Faz um desenho de uma pratileira verticalmente.
+
+## São os parâmetros:
+
+     xI = posição horizontal inicial
+     xF = posição horizontal final
+     yI = posição vertical inicial
+     yF = posição vertical final
+     espacamento = espaco que tera de uma separacao a outra
+     cor = cor da prateleira
+
+### Exemplo:
+
+![image](https://github.com/user-attachments/assets/340b1e7d-edf9-4fa9-a740-47d1ee90c7f4)
+
+![image](https://github.com/user-attachments/assets/50b2d6e0-8c96-4c61-9594-f24b181985e3)
+
+---
+
+## prateleiraHorizontal
+Faz um desenho de uma prateleira horizontalmente.
+
+São os parâmetros:
+
+     xI = posição horizontal inicial
+     xF = posição horizontal final
+     yI = posição vertical inicial
+     yF = posição vertical final
+     espacamento = espaco que tera de uma separacao a outra
+     cor = cor da prateleira
+
+### Exemplo:
+
+![image](https://github.com/user-attachments/assets/f3fe8d2f-530b-4186-9400-2ddc498fd08d)
+
+![image](https://github.com/user-attachments/assets/b3ab05e8-625a-40e4-8ae6-c63c40c208f7)
+
+---
+
+## preencherPrateleiraVertical
+Preenche os dados da prateleira construida anteriormente.
+
+## São os parametros:
+
+     x = posição horizontal
+     yI = posição vertical inicial
+     yF = posição vertical final
+     espacamento = espaço que terá de uma separação a outra
+     preencher = dados que serão exibidos
+     cor = cor da prateleira
+
+### Exemplo:
+
+![image](https://github.com/user-attachments/assets/4c8dc127-8ac9-4f7f-81dd-6e0fdc013159)
+
+![image](https://github.com/user-attachments/assets/8ef5f6bd-736f-48f3-936a-7a717ced90ef)
+
+---
+
+## preencherPrateleiraHorizontal
+Preenche os dados da pratelheira construida anteriormente.
+
+## São os parâmetros:
+
+     xI = posição horizontal inicial
+     xF = posição horizontal final
+     y = posição vertical
+     espacamento = espaço que terá de uma separação a outra
+     preencher = dados que serão exibidos
+     cor = cor da prateleira
+
+### Exemplo:
+
+![image](https://github.com/user-attachments/assets/c0a74bbf-c900-422c-a302-6c9a1f9c2cf7)
+
+![image](https://github.com/user-attachments/assets/eb87fc66-cc3b-4bb0-9fc1-473140452c71)
+
+---
 
 # *Dicas de Clean Code*
+## O que é?
+
 Clean Code é um conceito que se refere à prática de escrever códigos de programação de uma maneira que seja fácil de entender, manter e modificar.
 
 Princípios fundamentais do Clean Code:
@@ -289,3 +444,33 @@ Com Clean Code: [Código](https://gist.github.com/Pedro-Rotta/0b8a9a0d152f3eb323
 [Código](https://gist.github.com/Pedro-Rotta/6e1ecc6f5e3a7c8477318acfe679ea95)
 
 ![image](https://github.com/user-attachments/assets/d2e9fa2c-dfa4-4f93-96c4-96f15abd2178)
+
+---
+
+# Agradecimentos e considerações finais
+
+---
+
+Agradeço a você que leu até aqui! Ficarei muito feliz se quiser apoiar o projeto criando uma branch e desenvolvendo novas funcionalidades ou adicionando exemplos extras do que é possível fazer com a biblioteca conio2. Afinal, quando se trata de desenvolvimento, o céu é o limite! 🚀
+
+Este repositório tem como principal objetivo ajudar aqueles que desejam explorar essa interface gráfica mais simples, seja por interesse próprio ou por falta de tempo para se aprofundar no design. Com este arquivo em mãos, é possível criar uma interface visual interessante para trabalhos acadêmicos e projetos pessoais sem gastar muito tempo.
+
+## ⭐ Se este projeto foi útil para você ou despertou seu interesse, deixe uma estrela para ajudar na sua visibilidade e permitir que mais pessoas o encontrem!
+
+
+### 📲 Me siga nas redes sociais
+
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/p_rotta7/)
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/pedro-rotta-5985a0237/)
+
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Pedro-Rotta)
+
+
+
+
+
+
+
+
+
