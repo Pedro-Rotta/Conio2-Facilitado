@@ -17,6 +17,7 @@ neste repositório ele ensina a instalar diretamente no VS-Code.
 # Área de navegação
 - [Como usar](https://github.com/Pedro-Rotta/Conio2-Facilitado#como-usar)
 - [Explicando as funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#%EF%B8%8Fexplicando-as-fun%C3%A7%C3%B5es%EF%B8%8F)
+
 - - [auxilioPosicoes](https://github.com/Pedro-Rotta/Conio2-Facilitado#auxilioposicoes)
 - - [retangulo](https://github.com/Pedro-Rotta/Conio2-Facilitado#retangulo)
 - - [exibeTexto](https://github.com/Pedro-Rotta/Conio2-Facilitado#exibetexto)
