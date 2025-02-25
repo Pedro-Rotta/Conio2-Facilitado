@@ -3,6 +3,8 @@ Este é um arquivo de cabeçalho utilizado para tornar a utilização do Conio2 
 ## O que é o Conio2?
 Conio2 é uma biblioteca de programação em C que facilita a criação de interfaces de usuário em modo texto (ou seja, em um terminal ou console). Ela oferece funções para manipular a tela do console, como mover o cursor para diferentes posições, alterar as cores do texto e do fundo, e desenhar formas simples como linhas e retângulos.
 
+---
+
 ## Instalação do Conio2
 
 Segue um repositório do [mateus-sm](https://github.com/mateus-sm) detalhado sobre como instalar o Conio2 em seu computador,
@@ -12,6 +14,32 @@ neste repositório ele ensina a instalar diretamente no VS-Code.
 
 ---
 
+# Área de navegação
+- [Como usar](https://github.com/Pedro-Rotta/Conio2-Facilitado#como-usar)
+- [Explicando as funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#%EF%B8%8Fexplicando-as-fun%C3%A7%C3%B5es%EF%B8%8F)
+- - [auxilioPosicoes](https://github.com/Pedro-Rotta/Conio2-Facilitado#auxilioposicoes)
+- - [retangulo](https://github.com/Pedro-Rotta/Conio2-Facilitado#retangulo)
+- - [exibeTexto](https://github.com/Pedro-Rotta/Conio2-Facilitado#exibetexto)
+- - [linhaHorizontal e linhaHorizontalComLaterais](https://github.com/Pedro-Rotta/Conio2-Facilitado#linhahorizontal-e-linhahorizontalcomlaterais)
+- - [linhaVertical e linhaVerticalComExtremidades](https://github.com/Pedro-Rotta/Conio2-Facilitado#linhavertical-e-linhaverticalcomextremidades)
+- - [Cantos](https://github.com/Pedro-Rotta/Conio2-Facilitado#cantos)
+- - [repetirCaracaterHorizontal e repetirCaracterVertical](https://github.com/Pedro-Rotta/Conio2-Facilitado#repetircaracaterhorizontal-e-repetircaractervertical)
+- - [opcoesMenu e opcoesMenuEspacado](https://github.com/Pedro-Rotta/Conio2-Facilitado#opcoesmenu-e-opcoesmenuespacado)
+- - [clearArea](https://github.com/Pedro-Rotta/Conio2-Facilitado#cleararea)
+- - [ligacao4Pontos](https://github.com/Pedro-Rotta/Conio2-Facilitado#ligacao4pontos)
+- - [pintarArea](https://github.com/Pedro-Rotta/Conio2-Facilitado#pintararea)
+- - [prateleiraVertical](https://github.com/Pedro-Rotta/Conio2-Facilitado#prateleiravertical)
+- - [prateleiraHorizontal](https://github.com/Pedro-Rotta/Conio2-Facilitado#prateleirahorizontal)
+- - [preencherPrateleiraVertical](https://github.com/Pedro-Rotta/Conio2-Facilitado#preencherprateleiravertical)
+- - [preencherPrateleiraHorizontal](https://github.com/Pedro-Rotta/Conio2-Facilitado#preencherprateleirahorizontal)
+- [Dicas de Clean Code](https://github.com/Pedro-Rotta/Conio2-Facilitado#dicas-de-clean-code)
+- - [O que é?](https://github.com/Pedro-Rotta/Conio2-Facilitado/edit/main/README.md#o-que-%C3%A9)
+- - [Utilização de define](https://github.com/Pedro-Rotta/Conio2-Facilitado#utiliza%C3%A7%C3%A3o-de-define)
+- - [Criar funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#criar-fun%C3%A7%C3%B5es)
+- - [Exemplo prático de Clean Code](https://github.com/Pedro-Rotta/Conio2-Facilitado#exemplo-pr%C3%A1tico-de-clean-code)
+- [Exemplos de utilização na prática](https://github.com/Pedro-Rotta/Conio2-Facilitado#exemplos-de-utiliza%C3%A7%C3%A3o-na-pr%C3%A1tica-)
+
+---
 # ❓Como usar❓
 Para a utilização desse arquivo, será necessário algumas bibliotecas específicas, juntamente com o include do próprio arquivo.
 São as seguintes bibliotecas:
@@ -343,6 +371,8 @@ Preenche os dados da pratelheira construida anteriormente.
 ---
 
 # *Dicas de Clean Code*
+## O que é?
+
 Clean Code é um conceito que se refere à prática de escrever códigos de programação de uma maneira que seja fácil de entender, manter e modificar.
 
 Princípios fundamentais do Clean Code:
