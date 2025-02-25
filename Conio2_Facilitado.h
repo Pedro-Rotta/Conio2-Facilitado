@@ -1,3 +1,28 @@
+//DECLARACOES DOS METODOS
+void auxilioPosicoes();
+void retangulo(int xI, int xF, int yI, int yF, int cor);
+void exibeTexto(int x, int y, char txt[], int cor);
+void linhaHorizontal(int xI, int xF, int y, int cor);
+void linhaHorizontalComLaterais(int xI, int xF, int y, int cor);
+void linhaVertical(int x, int yI, int yF, int cor);
+void linhaVerticalComExtremidades(int x, int yI, int yF, int cor);
+void cantoSuperiorEsquerdo(int x, int y, int cor);
+void cantoSuperiorDireito(int x, int y, int cor);
+void cantoInferiorEsquerdo(int x, int y, int cor);
+void cantoInferiorDireito(int x, int y, int cor);
+void repetirCaracterHorizontal(int xI, int xF, int y, char caracter, int cor);
+void repetirCaracterVertical(int x, int yI, int yF, char caracter, int cor);
+void opcoesMenu(int qntOpcoes, int x, int y, char tit[][20], int cor);
+void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][20], int cor);
+void clearArea(int xI, int xF, int yI, int yF);
+void ligacao4Pontos(int x, int y, int cor);
+void pintarArea(int xI, int xF, int yI, int yF, int cor);
+void prateleiraVertical(int xI, int xF, int yI, int yF, int espacamento, int cor);
+void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char preenchimento[][30], int cor);
+void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][30], int cor);
+
+
+
 void auxilioPosicoes(){
     for(int x = 1; x <= 121;x++){
         if(x%10 == 0){
@@ -30,13 +55,32 @@ void auxilioPosicoes(){
     }
     gotoxy(1,1);
 }
-void linhaHorizontal(int y, int xI, int xF){
+void retangulo(int xI, int xF, int yI, int yF, int cor){
+    textcolor(cor);    
+    linhaHorizontal(xI, xF, yI, cor);
+    linhaHorizontal(xI, xF, yF, cor);
+    linhaVertical(xI, yI, yF, cor);
+    linhaVertical(xF, yI, yF, cor);
+    cantoSuperiorEsquerdo(xI, yI, cor);
+    cantoSuperiorDireito(xF, yI, cor);
+    cantoInferiorEsquerdo(xI, yF, cor);
+    cantoInferiorDireito(xF, yF, cor);
+}
+void exibeTexto(int x, int y, char txt[], int cor){
+    textcolor(cor);
+    gotoxy(x, y);
+    printf("%s", txt);
+    textcolor(WHITE);
+}
+void linhaHorizontal(int xI, int xF, int y, int cor){
+    textcolor(cor);
     while(xI <= xF){
         gotoxy(xI++,y);
         printf("%c", 205);
     }
 }
-void linhaHorizontalComLaterais(int y, int xI, int xF){
+void linhaHorizontalComLaterais(int xI, int xF, int y, int cor){
+    textcolor(cor);
     gotoxy(xI++, y);
     printf("%c", 204);
     gotoxy(xF, y);
@@ -46,14 +90,16 @@ void linhaHorizontalComLaterais(int y, int xI, int xF){
         printf("%c", 205);
     }
 }
-void linhaVertical(int x, int yI, int yF){
+void linhaVertical(int x, int yI, int yF, int cor){
+    textcolor(cor);
     while(yI <= yF){
         gotoxy(x,yI);
         printf("%c", 186);
         yI++;
     }
 }
-void linhaVerticalComExtremidades(int x, int yI, int yF){
+void linhaVerticalComExtremidades(int x, int yI, int yF, int cor){
+    textcolor(cor);
     gotoxy(x, yI++);
     printf("%c", 203);
     gotoxy(x, yF);
@@ -63,51 +109,44 @@ void linhaVerticalComExtremidades(int x, int yI, int yF){
         printf("%c", 186);
     }
 }
-void cantoSuperiorEsquerdo(int x, int y){
+void cantoSuperiorEsquerdo(int x, int y, int cor){
+    textcolor(cor);
     gotoxy(x, y);
     printf("%c", 201);
 }
-void cantoSuperiorDireito(int x, int y){
+void cantoSuperiorDireito(int x, int y, int cor){
+    textcolor(cor);
     gotoxy(x, y);
     printf("%c", 187);
 }
-void cantoInferiorEsquerdo(int x, int y){
+void cantoInferiorEsquerdo(int x, int y, int cor){
+    textcolor(cor);
     gotoxy(x, y);
     printf("%c", 200);
 }
-void cantoInferiorDireito(int x, int y){
+void cantoInferiorDireito(int x, int y, int cor){
+    textcolor(cor);
     gotoxy(x, y);
     printf("%c", 188);
 }
-void retangulo(int xI, int xF, int yI, int yF){
-        linhaHorizontal(yI, xI, xF);
-        linhaHorizontal(yF, xI, xF);
-        linhaVertical(xI, yI, yF);
-        linhaVertical(xF, yI, yF);
-        cantoSuperiorEsquerdo(xI, yI);
-        cantoSuperiorDireito(xF, yI);
-        cantoInferiorEsquerdo(xI, yF);
-        cantoInferiorDireito(xF, yF);
-        textcolor(WHITE);
-}
-void atribuirCor(int cor){
+void repetirCaracterHorizontal(int xI, int xF, int y, char caracter, int cor){
     textcolor(cor);
-}
-void repetirCaracterHorizontal(int y, int xI, int xF, char caracter){
     while(xI <= xF){
         gotoxy(xI++, y);
         printf("%c", caracter);
     }
 }
-void repetirCaracterVertical(int x, int yI, int yF, char caracter){
+void repetirCaracterVertical(int x, int yI, int yF, char caracter, int cor){
+    textcolor(cor);
     while(yI <= yF){
         gotoxy(x, yI++);
         printf("%c", caracter);
     }
 }
-void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][20]){
+void opcoesMenu(int qntOpcoes, int x, int y, char tit[][20], int cor){
     int i = 0;
-    for(int i=0;i <= qntOpcoes;i++, y+=2){
+    textcolor(cor);
+    for(int i=0;i <= qntOpcoes;i++, y++){
         if(i == qntOpcoes){
             gotoxy(x, y);
             printf("[ESC] %s", tit[i]);
@@ -118,9 +157,10 @@ void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][20]){
         }
     }
 }
-void opcoesMenu(int qntOpcoes, int x, int y, char tit[][20]){
+void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][20], int cor){
     int i = 0;
-    for(int i=0;i <= qntOpcoes;i++, y++){
+    textcolor(cor);
+    for(int i=0;i <= qntOpcoes;i++, y+=2){
         if(i == qntOpcoes){
             gotoxy(x, y);
             printf("[ESC] %s", tit[i]);
@@ -140,17 +180,58 @@ void clearArea(int xI, int xF, int yI, int yF){
         yI++;
     }
 }
-void textoDisplay(int x, int y, char txt[]){
-    gotoxy(x, y);
-    printf("%s", txt);
-}
-void textoErro(int x, int y, char txt[], int cor){
+
+void ligacao4Pontos(int x, int y, int cor){
     textcolor(cor);
-    gotoxy(x, y);
-    printf("Erro: %s", txt);
-    textcolor(WHITE);
-}
-void ligacao4Pontos(int x, int y){
     gotoxy(x,y);
     printf("%c", 206);
+}
+void pintarArea(int xI, int xF, int yI, int yF, int cor){
+    textcolor(cor);
+    while(yI <= yF){
+        for(int i = xI; i <= xF;i++){
+            gotoxy(i, yI);
+            printf("%c", 177);
+        }
+        yI++;
+    }
+}
+
+//DOCUMENTAR
+
+void prateleiraVertical(int xI, int xF, int yI, int yF, int espacamento, int cor){
+    int auxEspacamento = yI;
+    retangulo(xI, xF, yI, yF, cor);
+    auxEspacamento+=espacamento+1;
+    while(auxEspacamento < yF){
+        linhaHorizontalComLaterais(xI, xF, auxEspacamento, cor);
+        auxEspacamento+=espacamento+1;
+    }
+}
+void prateleiraHorizontal(int xI, int xF, int yI, int yF, int espacamento, int cor){
+    int auxEspacamento = xI;
+    retangulo(xI, xF, yI, yF, cor);
+    auxEspacamento+=espacamento+1;
+    while(auxEspacamento < xF){
+        linhaVerticalComExtremidades(auxEspacamento, yI, yF, cor);
+        auxEspacamento+=espacamento+1;
+    }
+}
+void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char preenchimento[][30], int cor){
+    int i = 0, auxEspacamento = yI+1;
+    textcolor(cor);
+    while(auxEspacamento <= yF){
+        gotoxy(x, auxEspacamento);
+        printf("%s", preenchimento[i++]);
+        auxEspacamento += espacamento+1;
+    }
+}
+void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][30], int cor){
+    int i = 0, auxEspacamento = xI+1;
+    textcolor(cor);
+    while(auxEspacamento <= xF){
+        gotoxy(auxEspacamento, y);
+        printf("%s", preenchimento[i++]);
+        auxEspacamento += espacamento+1;
+    }
 }
