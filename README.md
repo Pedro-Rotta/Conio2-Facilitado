@@ -14,7 +14,7 @@ neste repositório ele ensina a instalar diretamente no VS-Code.
 
 ---
 
-# Área de navegação
+# Índice 
 - [Como usar](https://github.com/Pedro-Rotta/Conio2-Facilitado#como-usar)
 - [Explicando as funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#%EF%B8%8Fexplicando-as-fun%C3%A7%C3%B5es%EF%B8%8F)
 
@@ -444,3 +444,33 @@ Com Clean Code: [Código](https://gist.github.com/Pedro-Rotta/0b8a9a0d152f3eb323
 [Código](https://gist.github.com/Pedro-Rotta/6e1ecc6f5e3a7c8477318acfe679ea95)
 
 ![image](https://github.com/user-attachments/assets/d2e9fa2c-dfa4-4f93-96c4-96f15abd2178)
+
+---
+
+# Agradecimentos e considerações finais
+
+---
+
+Obrigado a voce que leu até aqui, ficarei muito feliz se quiser apoiar o projeto fazendo uma branch e desenvolvendo algumas funções extras, ou até mesmo colocando exemplos adicionais do que é possivel fazer utilizando conio2, até por que quando se trata de desenvolvimento, o céu é o limite.
+
+Este repositório tem como principal intuito ajudar outras pessoas que se interessam em mexer um pouco com essa parte gráfica mais simples e até mesmo ajudar aqueles que não tem muito tempo para gastar com esse tipo de design, com esse arquivo em mãos, conseguimos fazer uma interface interessante para nossos trabalhos escolares e facultativos sem perder muito tempo.
+
+## Se este projeto te ajudou, ou se você se interessou por ele, deixe uma ⭐ para me ajudar e para mais pessoas verem.
+
+
+### Me siga nas redes sociais
+
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/p_rotta7/)
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/pedro-rotta-5985a0237/)
+
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Pedro-Rotta)
+
+
+
+
+
+
+
+
+
