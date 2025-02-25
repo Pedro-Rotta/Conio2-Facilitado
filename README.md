@@ -3,6 +3,13 @@ Este é um arquivo de cabeçalho utilizado para tornar a utilização do Conio2 
 ## O que é o Conio2?
 Conio2 é uma biblioteca de programação em C que facilita a criação de interfaces de usuário em modo texto (ou seja, em um terminal ou console). Ela oferece funções para manipular a tela do console, como mover o cursor para diferentes posições, alterar as cores do texto e do fundo, e desenhar formas simples como linhas e retângulos.
 
+## Instalação do Conio2
+
+Segue um repositório do [mateus-sm](https://github.com/mateus-sm) detalhado sobre como instalar o Conio2 em seu computador,
+neste repositório ele ensina a instalar diretamente no VS-Code.
+
+[Repositório](https://github.com/mateus-sm/Conio2-VsCode)
+
 ---
 
 # ❓Como usar❓
