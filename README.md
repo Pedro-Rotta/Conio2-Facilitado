@@ -39,7 +39,8 @@ neste repositório ele ensina a instalar diretamente no VS-Code.
 - - [Criar funções](https://github.com/Pedro-Rotta/Conio2-Facilitado#criar-fun%C3%A7%C3%B5es)
 - - [Exemplo prático de Clean Code](https://github.com/Pedro-Rotta/Conio2-Facilitado#exemplo-pr%C3%A1tico-de-clean-code)
 - [Exemplos de utilização na prática](https://github.com/Pedro-Rotta/Conio2-Facilitado#exemplos-de-utiliza%C3%A7%C3%A3o-na-pr%C3%A1tica-)
-
+- [Agradecimentos e considerações finais](https://github.com/Pedro-Rotta/Conio2-Facilitado#agradecimentos-e-considera%C3%A7%C3%B5es-finais)
+- - [Me siga nas redes sociais](https://github.com/Pedro-Rotta/Conio2-Facilitado#-me-siga-nas-redes-sociais)
 ---
 # ❓Como usar❓
 Para a utilização desse arquivo, será necessário algumas bibliotecas específicas, juntamente com o include do próprio arquivo.
@@ -451,7 +452,7 @@ Com Clean Code: [Código](https://gist.github.com/Pedro-Rotta/0b8a9a0d152f3eb323
 
 ---
 
-Agradeço a você que leu até aqui! Ficarei muito feliz se quiser apoiar o projeto criando uma branch e desenvolvendo novas funcionalidades ou adicionando exemplos extras do que é possível fazer com a biblioteca conio2. Afinal, quando se trata de desenvolvimento, o céu é o limite! 🚀
+Agradeço a você que leu até aqui! Ficarei muito feliz se quiser apoiar o projeto fazendo um fork, criando uma branch e desenvolvendo novas funcionalidades ou adicionando exemplos extras do que é possível fazer com a biblioteca conio2. Afinal, quando se trata de desenvolvimento, o céu é o limite! 🚀
 
 Este repositório tem como principal objetivo ajudar aqueles que desejam explorar essa interface gráfica mais simples, seja por interesse próprio ou por falta de tempo para se aprofundar no design. Com este arquivo em mãos, é possível criar uma interface visual interessante para trabalhos acadêmicos e projetos pessoais sem gastar muito tempo.
 
