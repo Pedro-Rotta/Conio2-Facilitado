@@ -22,39 +22,35 @@ void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char pr
 void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][30], int cor);
 
 
-
 void auxilioPosicoes(){
-    for(int x = 1; x <= 121;x++){
-        if(x%10 == 0){
-            textcolor(RED);
-            gotoxy(x, 1);
-            printf("%d", x%10);
-            textcolor(WHITE);
-        }
-        else{
-            gotoxy(x, 1);
-            printf("%d", x%10);
+    for (int x = 1; x <= 100;x++) {
+        if (x < 10) {
+            char aux[] = {x + '0', '\0'};
+            exibeTexto(x, 1, aux, (x % 10 == 0) ? RED : WHITE);
+        } else {
+            char aux[] = {(x % 10) + '0', '\0'};
+            exibeTexto(x, 2, aux, (x % 10 == 0) ? RED : WHITE);
+
+            aux[0] = ((x / 10) % 10) + '0';
+            exibeTexto(x, 1, aux, (x % 10 == 0) ? RED : WHITE);
         }
     }
-    for(int y = 2; y <= 30; y++){
-        if(y%10 == 0){
-            textcolor(RED);
-            gotoxy(1,y);
-            printf("%d\n", y);
-            textcolor(WHITE);
+    for (int y = 2; y <= 30; y++) {
+        char aux[] = {((y / 10) % 10) + '0', (y % 10) + '0', '\0'};
+        if (y < 10) {
+            aux[0] = aux[1];
+            aux[1] = '\0';
         }
-        else{
-            if(y < 10){
-                gotoxy(1,y);
-                printf("0%d\n", y);
-            }
-            else{
-                printf("%d\n", y);
-            }
+        exibeTexto(1, y, aux, (y % 10 == 0) ? RED : WHITE);
+    }
+    for (int y = 10; y <= 30; y = y + 10) {
+        for (int x = 10; x <= 100; x = x + 10) {
+            exibeTexto(x, y, "+", RED);
         }
     }
     gotoxy(1,1);
 }
+
 void retangulo(int xI, int xF, int yI, int yF, int cor){
     textcolor(cor);    
     linhaHorizontal(xI, xF, yI, cor);
@@ -196,8 +192,6 @@ void pintarArea(int xI, int xF, int yI, int yF, int cor){
         yI++;
     }
 }
-
-//DOCUMENTAR
 
 void prateleiraVertical(int xI, int xF, int yI, int yF, int espacamento, int cor){
     int auxEspacamento = yI;
