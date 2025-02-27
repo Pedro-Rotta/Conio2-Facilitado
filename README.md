@@ -80,7 +80,7 @@ Sendo todo número vermelho um décimo elemento.
 ## retangulo
 Essa é a função que mais acelera seu desenvolvimento de interface no CMD. Deve-se passar 4 parâmetros indicando o início e fim:
 
-## São os parâmetros:
+### São os parâmetros:
 
     xI = posição horizontal inicial
     xF = posição horizontal final
@@ -98,7 +98,8 @@ Essa é a função que mais acelera seu desenvolvimento de interface no CMD. Dev
 
 ## exibeTexto
 Exibe o determinado texto.
-## São os parâmetros:
+
+### São os parâmetros:
 
     x = posição horizontal
     y = posição vertical
@@ -116,7 +117,7 @@ Exibe o determinado texto.
 ## linhaHorizontal e linhaHorizontalComLaterais
 Essas funções servem para desenhar uma linha vertical, com ou sem as extremidades.
 
-## São os parâmetros:
+### São os parâmetros:
 
      xI = posicao horizontal inicial
      xF = posicao horizontal final
@@ -134,7 +135,7 @@ Essas funções servem para desenhar uma linha vertical, com ou sem as extremida
 ## linhaVertical e linhaVerticalComExtremidades
 Estas funções servem para desenhar uma linha vertical, com ou sem as extremidades.
 
-## São os parâmetros da linha vertical:
+### São os parâmetros da linha vertical:
 
     x = posicao horizontal
     yI = posicao vertical inicial
@@ -159,7 +160,7 @@ A passagem de parâmetros é igual para as 4 funções:
      cantoSuperiorDireito
      cantoInferiorDireito
      
-## São os parâmetros:
+### São os parâmetros:
 
      x = posição horizontal
      y = posição vertical
@@ -176,13 +177,13 @@ A passagem de parâmetros é igual para as 4 funções:
 ## repetirCaracaterHorizontal e repetirCaracterVertical
 Essas funções desenham uma linha de caracteres.
 
-## São os parâmetros da vertical:
+### São os parâmetros da vertical:
 
     x = posição horizontal
     yI = posição vertical inicial
     yF = posição vertical final
     cor = cor dos caracteres
-## São os parâmetros da horizontal:
+### São os parâmetros da horizontal:
 
     xI = posição horizontal inicial
     xF = posição horizontal final
@@ -202,7 +203,7 @@ Lembre-se sempre de passar o caractere entre aspas comuns.
 ## opcoesMenu e opcoesMenuEspacado
 Cria um menu com todas as opcoes desejadas.
 
-## São os parâmetros:
+### São os parâmetros:
 
     qntOpcoes = quantidade de elementos
     x = posição horizontal
@@ -213,19 +214,21 @@ Cria um menu com todas as opcoes desejadas.
 Os elementos são passados por uma matriz de char (vetor de strings), então você deve criá-la antes.
 
 Criando os elementos: 
-![image](https://github.com/user-attachments/assets/e177a330-52aa-4203-ac6c-fc998bcbc052)
+![image](https://github.com/user-attachments/assets/2a58163b-e1b9-442b-8657-af1d3475c3e4)
 
-Lembrando que a quantidade de elementos define a quantidade de opções que seu menu vai ter [A-Z], o último elemento sempre será "[ESC]", sendo assim, deve-se atribuir a mensagem que o "[ESC]" receberá, mas sem contá-lo como elemento.
+Lembrando que: a quantidade de elementos deve ser a mesma que está na função, nesse caso [26]. 
+
+A quantidade de elementos define a quantidade de opções que seu menu vai ter [A-Z], o último elemento sempre será "[ESC]", sendo assim, deve-se atribuir a mensagem que o "[ESC]" receberá, mas sem contá-lo como elemento.
 
 ### Exemplo Menu: 
 
-![image](https://github.com/user-attachments/assets/9cec35cf-4818-4d6e-a391-7bf1b7c0ba3f)
+![image](https://github.com/user-attachments/assets/40f21462-ff77-4359-8814-ee4ba88dbe95)
 
 ![image](https://github.com/user-attachments/assets/458e5025-bd53-4a0c-b09d-56b8f78f2fa6)
 
 ### Exemplo Menu espaçado:
 
-![image](https://github.com/user-attachments/assets/3d3163c0-7902-4dca-8e69-df4da5e23b24)
+![image](https://github.com/user-attachments/assets/ff662492-fdeb-4b92-8241-bb60a3b3954c)
 
 ![image](https://github.com/user-attachments/assets/d02c7b49-8d78-46bb-bded-15f1012e9f45)
 
@@ -234,7 +237,7 @@ Lembrando que a quantidade de elementos define a quantidade de opções que seu 
 ## clearArea
 Essa função tem seu funcionamento semelhante ao "clrscr()", porém limpa apenas determinada área escolhida pelo programador.
 
-## São os parâmetros:
+### São os parâmetros:
 
     xI = posição horizontal inicial
     xF = posição horizontal final
@@ -260,7 +263,7 @@ Depois do clear:
 ## ligacao4Pontos
 Faz um ponto de encontro de 4 lados.
 
-## São os parâmetros:
+### São os parâmetros:
 
     x = posição horizontal
     y = posição vertical
@@ -276,7 +279,7 @@ Faz um ponto de encontro de 4 lados.
 ## pintarArea
 Pinta uma determinada area da sua escolha.
 
-## São os parâmetros:
+### São os parâmetros:
 
      xI = posição horizontal inicial
      xF = posição horizontal final
@@ -295,7 +298,7 @@ Pinta uma determinada area da sua escolha.
 ## prateleiraVertical
 Faz um desenho de uma pratileira verticalmente.
 
-## São os parâmetros:
+### São os parâmetros:
 
      xI = posição horizontal inicial
      xF = posição horizontal final
@@ -315,7 +318,7 @@ Faz um desenho de uma pratileira verticalmente.
 ## prateleiraHorizontal
 Faz um desenho de uma prateleira horizontalmente.
 
-São os parâmetros:
+### São os parâmetros:
 
      xI = posição horizontal inicial
      xF = posição horizontal final
@@ -335,7 +338,7 @@ São os parâmetros:
 ## preencherPrateleiraVertical
 Preenche os dados da prateleira construida anteriormente.
 
-## São os parametros:
+### São os parametros:
 
      x = posição horizontal
      yI = posição vertical inicial
@@ -344,9 +347,12 @@ Preenche os dados da prateleira construida anteriormente.
      preencher = dados que serão exibidos
      cor = cor da prateleira
 
+Lembrando que: a quantidade de elementos deve ser a mesma que está na função, nesse caso [100]. 
+
 ### Exemplo:
 
-![image](https://github.com/user-attachments/assets/4c8dc127-8ac9-4f7f-81dd-6e0fdc013159)
+
+![image](https://github.com/user-attachments/assets/a766e0cf-0046-4d3b-82c6-81a0560983ae)
 
 ![image](https://github.com/user-attachments/assets/8ef5f6bd-736f-48f3-936a-7a717ced90ef)
 
@@ -355,7 +361,7 @@ Preenche os dados da prateleira construida anteriormente.
 ## preencherPrateleiraHorizontal
 Preenche os dados da pratelheira construida anteriormente.
 
-## São os parâmetros:
+### São os parâmetros:
 
      xI = posição horizontal inicial
      xF = posição horizontal final
@@ -363,10 +369,12 @@ Preenche os dados da pratelheira construida anteriormente.
      espacamento = espaço que terá de uma separação a outra
      preencher = dados que serão exibidos
      cor = cor da prateleira
+     
+Lembrando que: a quantidade de elementos deve ser a mesma que está na função, nesse caso [100]. 
 
 ### Exemplo:
 
-![image](https://github.com/user-attachments/assets/c0a74bbf-c900-422c-a302-6c9a1f9c2cf7)
+![image](https://github.com/user-attachments/assets/c442e507-d0e3-4b2a-aefc-f058ee5e220b)
 
 ![image](https://github.com/user-attachments/assets/eb87fc66-cc3b-4bb0-9fc1-473140452c71)
 
