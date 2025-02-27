@@ -72,7 +72,7 @@ Sendo todo número vermelho um décimo elemento.
 
 ![image](https://github.com/user-attachments/assets/7ddaa0ef-edd3-45a2-a012-6d1bcea61423)
 
-![image](https://github.com/user-attachments/assets/3c606d1a-302b-41a9-9303-5cb452452e51)
+![image](https://github.com/user-attachments/assets/332ec241-66a6-4203-8c66-1f1b887b09a6)
 
 ---
 
