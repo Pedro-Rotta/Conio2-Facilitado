@@ -139,7 +139,7 @@ void repetirCaracterVertical(int x, int yI, int yF, char caracter, int cor){
         printf("%c", caracter);
     }
 }
-void opcoesMenu(int qntOpcoes, int x, int y, char tit[][20], int cor){
+void opcoesMenu(int qntOpcoes, int x, int y, char tit[][26], int cor){
     int i = 0;
     textcolor(cor);
     for(int i=0;i <= qntOpcoes;i++, y++){
@@ -153,7 +153,7 @@ void opcoesMenu(int qntOpcoes, int x, int y, char tit[][20], int cor){
         }
     }
 }
-void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][20], int cor){
+void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][26], int cor){
     int i = 0;
     textcolor(cor);
     for(int i=0;i <= qntOpcoes;i++, y+=2){
@@ -211,7 +211,7 @@ void prateleiraHorizontal(int xI, int xF, int yI, int yF, int espacamento, int c
         auxEspacamento+=espacamento+1;
     }
 }
-void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char preenchimento[][30], int cor){
+void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char preenchimento[][100], int cor){
     int i = 0, auxEspacamento = yI+1;
     textcolor(cor);
     while(auxEspacamento <= yF){
@@ -220,7 +220,7 @@ void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char pr
         auxEspacamento += espacamento+1;
     }
 }
-void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][30], int cor){
+void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][100], int cor){
     int i = 0, auxEspacamento = xI+1;
     textcolor(cor);
     while(auxEspacamento <= xF){
