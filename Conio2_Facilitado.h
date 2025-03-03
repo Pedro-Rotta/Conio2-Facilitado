@@ -12,14 +12,14 @@ void cantoInferiorEsquerdo(int x, int y, int cor);
 void cantoInferiorDireito(int x, int y, int cor);
 void repetirCaracterHorizontal(int xI, int xF, int y, char caracter, int cor);
 void repetirCaracterVertical(int x, int yI, int yF, char caracter, int cor);
-void opcoesMenu(int qntOpcoes, int x, int y, char tit[][20], int cor);
-void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][20], int cor);
+void opcoesMenu(int qntOpcoes, int x, int y, char tit[][26], int cor);
+void opcoesMenuEspacado(int qntOpcoes, int x, int y, char tit[][26], int cor);
 void clearArea(int xI, int xF, int yI, int yF);
 void ligacao4Pontos(int x, int y, int cor);
 void pintarArea(int xI, int xF, int yI, int yF, int cor);
 void prateleiraVertical(int xI, int xF, int yI, int yF, int espacamento, int cor);
-void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char preenchimento[][30], int cor);
-void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][30], int cor);
+void preencherprateleiraVertical(int x, int yI, int yF, int espacamento, char preenchimento[][100], int cor);
+void preencherprateleiraHorizontal(int xI, int xF, int y, int espacamento, char preenchimento[][100], int cor);
 
 
 void auxilioPosicoes(){
@@ -176,7 +176,6 @@ void clearArea(int xI, int xF, int yI, int yF){
         yI++;
     }
 }
-
 void ligacao4Pontos(int x, int y, int cor){
     textcolor(cor);
     gotoxy(x,y);
@@ -192,7 +191,6 @@ void pintarArea(int xI, int xF, int yI, int yF, int cor){
         yI++;
     }
 }
-
 void prateleiraVertical(int xI, int xF, int yI, int yF, int espacamento, int cor){
     int auxEspacamento = yI;
     retangulo(xI, xF, yI, yF, cor);
